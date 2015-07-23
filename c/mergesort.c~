@@ -1,0 +1,91 @@
+#include<stdio.h>
+
+#define MAX 50
+int count = 0 ;
+void merge(int arr[], int i, int m, int f);
+void mergesort(int arr[], int i, int f);
+
+int main(void)
+{
+	int arr[MAX], i, n;
+	
+	puts("\t\tMERGESORT::\n");
+	puts("Enter the no elements:\n");
+	
+	scanf("%d",&n);
+	puts("Enter the elements\n");
+	for(i=0; i<n; i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	
+	mergesort(arr, 0, n-1);
+	
+	puts("Sorted array is as:\n");
+	
+	for(i=0; i<n; i++)
+	{
+		printf("%d\t",arr[i]);
+	}
+}
+
+void mergesort(int arr[], int i, int f)
+{
+	int m;
+//	printf("%d",m);
+//	printf("\ncount = %d\n",count++);
+	if(i<f)
+	{
+		m = (i + f)/2;
+		mergesort(arr, i , m);
+		mergesort(arr, m+1,f);
+		merge(arr, i, m ,f);
+	}
+}
+
+void merge(int arr[], int i, int m, int f)
+{
+	int n1,n2,x;
+	n1 = m-i+1;
+	n2 = f-m;
+	int l[n1],r[n2];
+	l[n1] = 9999;
+	r[n2] = 9999;
+	puts("\nl is ");
+	for(x=0; x<n1; x++)
+	{
+		l[x] = arr[i+x];
+		printf("%d\t",l[x]);
+	}
+	puts("\nr is ");
+	for(x=0; x<n2; x++)
+	{
+		r[x] = arr[m+1+x];
+		printf("%d\t",r[x]);
+	}
+	
+//	int p = 0, q= 0;
+//	int o;
+//	if(n1 > n2) o=n2;
+//	else o=n1;
+	for(x=i; x<=f; x++)
+	{
+		if(l[p] <= r[q])
+		{
+			arr[x] = l[p];
+			p++;
+		}
+		else
+		{
+			arr[x] = r[q];
+			q++;
+		}
+	}
+	
+	
+	puts("\nsubarr is ");
+	for(x=i; x<=f; x++)
+	{
+		printf("%d\t",arr[x]);
+	}
+}

@@ -1,0 +1,6 @@
+#!/bin/bash
+# schript.sh : Sample shell sript
+echo "Today's date is : `date`"
+echo "This month's calendar:"
+cat `date "+%m 20%y"`
+echo "My shel : $SHELL"

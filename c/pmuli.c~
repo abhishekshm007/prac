@@ -1,0 +1,8 @@
+#include<stdio.h>
+
+int main(void){
+	float f = 10.9;
+	char *c  = &f;
+	printf("&c %u  *c %f   \n",c,*c);
+	return 0;
+}

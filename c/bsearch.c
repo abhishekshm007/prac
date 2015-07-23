@@ -1,0 +1,40 @@
+#include<stdio.h>
+#define MAX 50
+
+int search(int arr[], int i, int f,int key);
+
+int main(void)
+{
+	int arr[MAX],size,i,index,key;
+	puts("\n\t\t::BINARY SEARCH::\n");
+	puts("enter the no of elements:\n");
+	scanf("%d",&size);
+	puts("enter the elements(sorted):\n");
+	for(i=0; i<size; i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	puts("enter the element to be search:\n");
+	scanf("%d",&key);
+	index= search(arr,0,size-1,key);
+	puts("element's index is:");
+	printf("  %d\n",index);
+	return 0;
+	
+}
+
+int search(int arr[], int i, int f, int key)
+{
+	int m;
+	if(i<f)
+	{
+		m = (i+f)/2;
+		if(key < arr[m])
+		search(arr, i, m-1, key);
+		else if(key > arr[m])
+		search(arr, m+1, f,key);
+		else return m;
+	}
+	else
+	return -1;
+}

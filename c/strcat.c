@@ -1,0 +1,42 @@
+#include<stdio.h>
+
+char * strcat( char *, char *);
+
+int main(int argc, char *argv[]){
+	FILE *fp;
+	char r[100],t[100];
+	char errMsg[] = "\narguments are not correct to open file\n";
+	if(argc == 1){
+		printf(errMsg);
+		return 1;
+	}
+	else if((fp = fopen(*++argv, "r+")) != NULL){
+		int i = 0;
+		while((r[i] = getc(fp)) != '\n')
+			i++;
+		r[i] = '\0';
+		i = 0;
+		while((t[i] = getc(fp)) != '\n')
+			i++;
+		t[i] = '\0';
+		char *f = strcat(r,t);
+		puts(f);
+	}
+	else {
+		puts(errMsg);
+		return 1;
+	}
+	return 0;
+	
+}
+
+char * strcat(char *s , char *t){
+	char *i = t;
+	while(*t++)
+	;
+	t--;
+	puts(t);
+	while(*t++ = *s++)
+	;
+	return i;
+}

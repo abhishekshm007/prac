@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+	
+	char c, *cc;
+	int i = 127;
+	cc = &i;
+	printf("\n%d\n",*cc);
+	return 0;
+}
