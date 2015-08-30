@@ -1,0 +1,22 @@
+13:30:13 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/file.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/file.d" -MT"src/file.d" -o "src/file.o" "../src/file.c"
+../src/file.c: In function ‘main’:
+../src/file.c:45:15: warning: variable ‘b’ set but not used [-Wunused-but-set-variable]
+  char c,a[30],b[30];
+               ^
+../src/file.c:45:9: warning: variable ‘a’ set but not used [-Wunused-but-set-variable]
+  char c,a[30],b[30];
+         ^
+Finished building: ../src/file.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/file.o   
+Finished building target: codeVita
+ 
+
+13:30:13 Build Finished (took 189ms)
+

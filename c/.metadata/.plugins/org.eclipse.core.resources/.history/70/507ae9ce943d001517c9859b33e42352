@@ -1,0 +1,22 @@
+/*
+ * Compound.c
+ *
+ *  Created on: 08-Aug-2015
+ *      Author: abhishek
+ */
+#include<stdio.h>
+
+int main(){
+	int t;
+	double p,r;
+	scanf("%f",&p);
+	scanf("%f",&r);
+	scanf("%d",&t);
+
+	while(t){
+		p = (p+ ((p*r)/(100*12)));
+	}
+	printf("%f",p);
+	return 0;
+}
+

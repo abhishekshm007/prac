@@ -1,0 +1,57 @@
+11:35:40 **** Incremental Build of configuration Debug for project CodeVita ****
+make all 
+Building file: ../src/MazeProblem.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MazeProblem.d" -MT"src/MazeProblem.d" -o "src/MazeProblem.o" "../src/MazeProblem.c"
+../src/MazeProblem.c: In function ‘main’:
+../src/MazeProblem.c:10:16: error: expected ‘]’ before ‘;’ token
+ #define LEN 350;
+                ^
+../src/MazeProblem.c:12:11: note: in expansion of macro ‘LEN’
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+           ^
+../src/MazeProblem.c:12:19: error: expected statement before ‘]’ token
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                   ^
+../src/MazeProblem.c:12:20: error: expected expression before ‘,’ token
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                    ^
+../src/MazeProblem.c:12:22: error: ‘i’ undeclared (first use in this function)
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                      ^
+../src/MazeProblem.c:12:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/MazeProblem.c:12:20: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                    ^
+../src/MazeProblem.c:12:25: error: ‘j’ undeclared (first use in this function)
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                         ^
+../src/MazeProblem.c:12:23: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                       ^
+../src/MazeProblem.c:12:28: error: ‘path’ undeclared (first use in this function)
+src/subdir.mk:18: recipe for target 'src/MazeProblem.o' failed
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                            ^
+../src/MazeProblem.c:10:16: error: expected ‘]’ before ‘;’ token
+ #define LEN 350;
+                ^
+../src/MazeProblem.c:12:38: note: in expansion of macro ‘LEN’
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                                      ^
+../src/MazeProblem.c:12:26: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                          ^
+../src/MazeProblem.c:12:44: error: ‘n’ undeclared (first use in this function)
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                                            ^
+../src/MazeProblem.c:12:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                                          ^
+../src/MazeProblem.c:15:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/MazeProblem.o] Error 1
+
+11:35:40 Build Finished (took 170ms)
+

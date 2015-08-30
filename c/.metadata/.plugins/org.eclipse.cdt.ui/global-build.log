@@ -1,0 +1,1519 @@
+11:35:40 **** Incremental Build of configuration Debug for project CodeVita ****
+make all 
+Building file: ../src/MazeProblem.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MazeProblem.d" -MT"src/MazeProblem.d" -o "src/MazeProblem.o" "../src/MazeProblem.c"
+../src/MazeProblem.c: In function ‘main’:
+../src/MazeProblem.c:10:16: error: expected ‘]’ before ‘;’ token
+ #define LEN 350;
+                ^
+../src/MazeProblem.c:12:11: note: in expansion of macro ‘LEN’
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+           ^
+../src/MazeProblem.c:12:19: error: expected statement before ‘]’ token
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                   ^
+../src/MazeProblem.c:12:20: error: expected expression before ‘,’ token
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                    ^
+../src/MazeProblem.c:12:22: error: ‘i’ undeclared (first use in this function)
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                      ^
+../src/MazeProblem.c:12:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/MazeProblem.c:12:20: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                    ^
+../src/MazeProblem.c:12:25: error: ‘j’ undeclared (first use in this function)
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                         ^
+../src/MazeProblem.c:12:23: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                       ^
+../src/MazeProblem.c:12:28: error: ‘path’ undeclared (first use in this function)
+src/subdir.mk:18: recipe for target 'src/MazeProblem.o' failed
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                            ^
+../src/MazeProblem.c:10:16: error: expected ‘]’ before ‘;’ token
+ #define LEN 350;
+                ^
+../src/MazeProblem.c:12:38: note: in expansion of macro ‘LEN’
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                                      ^
+../src/MazeProblem.c:12:26: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                          ^
+../src/MazeProblem.c:12:44: error: ‘n’ undeclared (first use in this function)
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                                            ^
+../src/MazeProblem.c:12:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  int maze[LEN][LEN], i, j, path[LEN][LEN], n;
+                                          ^
+../src/MazeProblem.c:15:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/MazeProblem.o] Error 1
+11:40:16 **** Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c: In function ‘main’:
+../src/codeVita.c:17:31: warning: unused variable ‘path’ [-Wunused-variable]
+  int maze[MAX][MAX], i, j, n, path[MAX][MAX];
+                               ^
+../src/codeVita.c:17:25: warning: unused variable ‘j’ [-Wunused-variable]
+  int maze[MAX][MAX], i, j, n, path[MAX][MAX];
+                         ^
+../src/codeVita.c:17:22: warning: unused variable ‘i’ [-Wunused-variable]
+  int maze[MAX][MAX], i, j, n, path[MAX][MAX];
+                      ^
+../src/codeVita.c:17:6: warning: unused variable ‘maze’ [-Wunused-variable]
+  int maze[MAX][MAX], i, j, n, path[MAX][MAX];
+      ^
+Finished building: ../src/codeVita.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o   
+Finished building target: codeVita
+ 
+11:40:22 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+14:43:05 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c: In function ‘main’:
+../src/codeVita.c:37:2: warning: implicit declaration of function ‘check’ [-Wimplicit-function-declaration]
+  flag = check(maze,rat,n,r);
+  ^
+../src/codeVita.c: At top level:
+../src/codeVita.c:46:15: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r){
+               ^
+../src/codeVita.c:46:29: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r){
+                             ^
+../src/codeVita.c: In function ‘check’:
+../src/codeVita.c:52:4: warning: implicit declaration of function ‘isReachable’ [-Wimplicit-function-declaration]
+    flag = isReachable(maze, n-1, rat[i], rat[j]);
+    ^
+../src/codeVita.c: At top level:
+../src/codeVita.c:71:21: error: array type has incomplete element type
+ int isReachable(int maze[][], int n, int rat1[], int rat2[]){
+                     ^
+../src/codeVita.c: In function ‘isReachable’:
+src/subdir.mk:18: recipe for target 'src/codeVita.o' failed
+../src/codeVita.c:77:22: error: type of formal parameter 1 is incomplete
+   return isReachable(maze, n, rat1, rat2);
+                      ^
+../src/codeVita.c:81:22: error: type of formal parameter 1 is incomplete
+   return isReachable(maze, n, rat1, rat2);
+                      ^
+../src/codeVita.c:85:22: error: type of formal parameter 1 is incomplete
+   return isReachable(maze, n, rat1, rat2);
+                      ^
+../src/codeVita.c:89:22: error: type of formal parameter 1 is incomplete
+   return isReachable(maze, n, rat1, rat2);
+                      ^
+make: *** [src/codeVita.o] Error 1
+14:44:58 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c:15:15: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r);
+               ^
+../src/codeVita.c:15:29: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r);
+                             ^
+../src/codeVita.c:16:21: error: array type has incomplete element type
+ int isReachable(int maze[][], int n, int rat1[], int rat2[]);
+                     ^
+../src/codeVita.c: In function ‘main’:
+../src/codeVita.c:39:15: error: type of formal parameter 1 is incomplete
+  flag = check(maze,rat,n,r);
+               ^
+../src/codeVita.c:39:20: error: type of formal parameter 2 is incomplete
+  flag = check(maze,rat,n,r);
+                    ^
+../src/codeVita.c: At top level:
+../src/codeVita.c:48:15: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r){
+src/subdir.mk:18: recipe for target 'src/codeVita.o' failed
+               ^
+../src/codeVita.c:48:29: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r){
+                             ^
+../src/codeVita.c: In function ‘check’:
+../src/codeVita.c:54:23: error: type of formal parameter 1 is incomplete
+    flag = isReachable(maze, n-1, rat[i], rat[j]);
+                       ^
+../src/codeVita.c: At top level:
+../src/codeVita.c:73:5: error: conflicting types for ‘isReachable’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:16:5: note: previous declaration of ‘isReachable’ was here
+ int isReachable(int maze[][], int n, int rat1[], int rat2[]);
+     ^
+../src/codeVita.c: In function ‘isReachable’:
+../src/codeVita.c:77:18: error: ‘maze’ undeclared (first use in this function)
+  if(rat1[1]<n && maze[rat1[0]][rat1[1]+1] == 1){
+                  ^
+../src/codeVita.c:77:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/codeVita.c:79:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:79:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:83:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:83:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:87:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:87:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:91:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:91:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+make: *** [src/codeVita.o] Error 1
+14:45:05 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c:15:15: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r);
+               ^
+../src/codeVita.c:15:29: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r);
+                             ^
+../src/codeVita.c:16:21: error: array type has incomplete element type
+ int isReachable(int maze[][], int n, int rat1[], int rat2[]);
+                     ^
+../src/codeVita.c: In function ‘main’:
+../src/codeVita.c:39:15: error: type of formal parameter 1 is incomplete
+  flag = check(maze,rat,n,r);
+               ^
+../src/codeVita.c:39:20: error: type of formal parameter 2 is incomplete
+  flag = check(maze,rat,n,r);
+                    ^
+../src/codeVita.c: At top level:
+../src/codeVita.c:48:15: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r){
+               ^
+../src/codeVita.c:48:29: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r){
+                             ^
+../src/codeVita.c: In function ‘check’:
+../src/codeVita.c:54:23: error: type of formal parameter 1 is incomplete
+    flag = isReachable(maze, n-1, rat[i], rat[j]);
+                       ^
+../src/codeVita.c: At top level:
+../src/codeVita.c:73:5: error: conflicting types for ‘isReachable’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:16:5: note: previous declaration of ‘isReachable’ was here
+src/subdir.mk:18: recipe for target 'src/codeVita.o' failed
+ int isReachable(int maze[][], int n, int rat1[], int rat2[]);
+     ^
+../src/codeVita.c: In function ‘isReachable’:
+../src/codeVita.c:77:18: error: ‘maze’ undeclared (first use in this function)
+  if(rat1[1]<n && maze[rat1[0]][rat1[1]+1] == 1){
+                  ^
+../src/codeVita.c:77:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/codeVita.c:79:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:79:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:83:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:83:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:87:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:87:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:91:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:91:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+make: *** [src/codeVita.o] Error 1
+14:45:42 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c:15:16: error: array type has incomplete element type
+ int check( int rat[][], int n, int r);
+                ^
+../src/codeVita.c: In function ‘main’:
+../src/codeVita.c:39:15: error: type of formal parameter 1 is incomplete
+  flag = check(rat,n,r);
+src/subdir.mk:18: recipe for target 'src/codeVita.o' failed
+               ^
+../src/codeVita.c: At top level:
+../src/codeVita.c:48:15: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r){
+               ^
+../src/codeVita.c:48:29: error: array type has incomplete element type
+ int check(int maze[][], int rat[][], int n, int r){
+                             ^
+../src/codeVita.c:48:5: error: conflicting types for ‘check’
+ int check(int maze[][], int rat[][], int n, int r){
+     ^
+../src/codeVita.c:15:5: note: previous declaration of ‘check’ was here
+ int check( int rat[][], int n, int r);
+     ^
+../src/codeVita.c: In function ‘check’:
+../src/codeVita.c:54:29: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+    flag = isReachable(maze, n-1, rat[i], rat[j]);
+                             ^
+../src/codeVita.c:16:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]);
+     ^
+../src/codeVita.c:54:11: error: too many arguments to function ‘isReachable’
+    flag = isReachable(maze, n-1, rat[i], rat[j]);
+           ^
+../src/codeVita.c:16:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]);
+     ^
+../src/codeVita.c: In function ‘isReachable’:
+../src/codeVita.c:79:22: warning: passing argument 1 of ‘isReachable’ makes integer from pointer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                      ^
+../src/codeVita.c:73:5: note: expected ‘int’ but argument is of type ‘int (*)[350]’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:79:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:79:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:83:22: warning: passing argument 1 of ‘isReachable’ makes integer from pointer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                      ^
+../src/codeVita.c:73:5: note: expected ‘int’ but argument is of type ‘int (*)[350]’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:83:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:83:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:87:22: warning: passing argument 1 of ‘isReachable’ makes integer from pointer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                      ^
+../src/codeVita.c:73:5: note: expected ‘int’ but argument is of type ‘int (*)[350]’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:87:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:87:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:91:22: warning: passing argument 1 of ‘isReachable’ makes integer from pointer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                      ^
+../src/codeVita.c:73:5: note: expected ‘int’ but argument is of type ‘int (*)[350]’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:91:28: warning: passing argument 2 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable(maze, n, rat1, rat2);
+                            ^
+../src/codeVita.c:73:5: note: expected ‘int *’ but argument is of type ‘int’
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+../src/codeVita.c:91:10: error: too many arguments to function ‘isReachable’
+   return isReachable(maze, n, rat1, rat2);
+          ^
+../src/codeVita.c:73:5: note: declared here
+ int isReachable( int n, int rat1[], int rat2[]){
+     ^
+make: *** [src/codeVita.o] Error 1
+14:46:10 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c:15:16: error: array type has incomplete element type
+ int check( int rat[][], int n, int r);
+                ^
+../src/codeVita.c: In function ‘main’:
+../src/codeVita.c:39:15: error: type of formal parameter 1 is incomplete
+  flag = check(rat,n,r);
+src/subdir.mk:18: recipe for target 'src/codeVita.o' failed
+               ^
+../src/codeVita.c: At top level:
+../src/codeVita.c:48:16: error: array type has incomplete element type
+ int check( int rat[][], int n, int r){
+                ^
+make: *** [src/codeVita.o] Error 1
+14:56:24 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c: In function ‘isReachable’:
+../src/codeVita.c:78:5: error: subscripted value is neither array nor pointer nor vector
+src/subdir.mk:18: recipe for target 'src/codeVita.o' failed
+   y1[1]++;
+     ^
+make: *** [src/codeVita.o] Error 1
+14:56:27 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c: In function ‘isReachable’:
+../src/codeVita.c:78:5: error: subscripted value is neither array nor pointer nor vector
+   y1[1]++;
+     ^
+src/subdir.mk:18: recipe for target 'src/codeVita.o' failed
+make: *** [src/codeVita.o] Error 1
+14:56:41 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c: In function ‘main’:
+../src/codeVita.c:27:16: warning: ‘j’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     maze[i][j] = 0;
+                ^
+Finished building: ../src/codeVita.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o   
+Finished building target: codeVita
+ 
+14:57:31 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+Finished building: ../src/codeVita.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o   
+Finished building target: codeVita
+ 
+15:01:40 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+Finished building: ../src/codeVita.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o   
+Finished building target: codeVita
+ 
+15:02:37 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+15:05:16 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+Finished building: ../src/codeVita.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o   
+Finished building target: codeVita
+ 
+15:08:34 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+Finished building: ../src/codeVita.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o   
+Finished building target: codeVita
+ 
+15:11:12 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+Finished building: ../src/codeVita.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o   
+Finished building target: codeVita
+ 
+15:11:22 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:37 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c: In function ‘check’:
+../src/codeVita.c:52:4: error: variable-sized object may not be initialized
+    int path[n][n] = {0};
+    ^
+../src/codeVita.c:52:4: warning: missing braces around initializer [-Wmissing-braces]
+../src/codeVita.c:52:4: warning: (near initialization for ‘path[0]’) [-Wmissing-braces]
+src/subdir.mk:18: recipe for target 'src/codeVita.o' failed
+../src/codeVita.c:52:4: warning: excess elements in array initializer
+../src/codeVita.c:52:4: warning: (near initialization for ‘path[0]’)
+../src/codeVita.c:52:4: warning: excess elements in array initializer
+../src/codeVita.c:52:4: warning: (near initialization for ‘path’)
+../src/codeVita.c:54:23: warning: passing argument 1 of ‘isReachable’ makes integer from pointer without a cast
+    flag = isReachable(path, n-1, rat[i][0], rat[i][1], rat[j][0], rat[j][1]);
+                       ^
+../src/codeVita.c:16:5: note: expected ‘int’ but argument is of type ‘int (*)[(sizetype)(n)]’
+ int isReachable( int n, int x1, int y1, int x2, int y2);
+     ^
+../src/codeVita.c:54:11: error: too many arguments to function ‘isReachable’
+    flag = isReachable(path, n-1, rat[i][0], rat[i][1], rat[j][0], rat[j][1]);
+           ^
+../src/codeVita.c:16:5: note: declared here
+ int isReachable( int n, int x1, int y1, int x2, int y2);
+     ^
+../src/codeVita.c: At top level:
+../src/codeVita.c:74:5: error: conflicting types for ‘isReachable’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:16:5: note: previous declaration of ‘isReachable’ was here
+ int isReachable( int n, int x1, int y1, int x2, int y2);
+     ^
+../src/codeVita.c: In function ‘isReachable’:
+../src/codeVita.c:78:2: error: invalid use of array with unspecified bounds
+  if(y1<n && path[x1][y1]== 0 && maze[x1][y1+1] == 1){
+  ^
+../src/codeVita.c:80:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:81:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:81:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:83:2: error: invalid use of array with unspecified bounds
+  if(x1<n && path[x1][y1]== 0 && maze[x1+1][y1] == 1){
+  ^
+../src/codeVita.c:85:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:86:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:86:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:88:2: error: invalid use of array with unspecified bounds
+  if(y1>0 && path[x1][y1]== 0 && maze[x1][y1-1] == 1){
+  ^
+../src/codeVita.c:90:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:91:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:91:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:93:2: error: invalid use of array with unspecified bounds
+  if(x1>0 && path[x1][y1]== 0 && maze[x1-1][y1] == 1){
+  ^
+../src/codeVita.c:95:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:96:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:96:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+make: *** [src/codeVita.o] Error 1
+16:11:01 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c: In function ‘check’:
+../src/codeVita.c:52:4: error: variable-sized object may not be initialized
+    int path[n][n] = {0};
+    ^
+../src/codeVita.c:52:4: warning: missing braces around initializer [-Wmissing-braces]
+../src/codeVita.c:52:4: warning: (near initialization for ‘path[0]’) [-Wmissing-braces]
+../src/codeVita.c:52:4: warning: excess elements in array initializer
+../src/codeVita.c:52:4: warning: (near initialization for ‘path[0]’)
+../src/codeVita.c:52:4: warning: excess elements in array initializer
+../src/codeVita.c:52:4: warning: (near initialization for ‘path’)
+../src/codeVita.c: In function ‘isReachable’:
+../src/codeVita.c:78:2: error: invalid use of array with unspecified bounds
+  if(y1<n && path[x1][y1]== 0 && maze[x1][y1+1] == 1){
+  ^
+../src/codeVita.c:80:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:81:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+src/subdir.mk:18: recipe for target 'src/codeVita.o' failed
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:81:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:83:2: error: invalid use of array with unspecified bounds
+  if(x1<n && path[x1][y1]== 0 && maze[x1+1][y1] == 1){
+  ^
+../src/codeVita.c:85:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:86:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:86:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:88:2: error: invalid use of array with unspecified bounds
+  if(y1>0 && path[x1][y1]== 0 && maze[x1][y1-1] == 1){
+  ^
+../src/codeVita.c:90:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:91:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:91:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:93:2: error: invalid use of array with unspecified bounds
+  if(x1>0 && path[x1][y1]== 0 && maze[x1-1][y1] == 1){
+  ^
+../src/codeVita.c:95:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:96:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:96:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+make: *** [src/codeVita.o] Error 1
+16:11:31 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c: In function ‘check’:
+../src/codeVita.c:52:4: warning: missing braces around initializer [-Wmissing-braces]
+    int path[MAX][MAX] = {0};
+    ^
+../src/codeVita.c:52:4: warning: (near initialization for ‘path[0]’) [-Wmissing-braces]
+../src/codeVita.c: In function ‘isReachable’:
+../src/codeVita.c:78:2: error: invalid use of array with unspecified bounds
+  if(y1<n && path[x1][y1]== 0 && maze[x1][y1+1] == 1){
+  ^
+../src/codeVita.c:80:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:81:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+src/subdir.mk:18: recipe for target 'src/codeVita.o' failed
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:81:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:83:2: error: invalid use of array with unspecified bounds
+  if(x1<n && path[x1][y1]== 0 && maze[x1+1][y1] == 1){
+  ^
+../src/codeVita.c:85:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:86:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:86:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:88:2: error: invalid use of array with unspecified bounds
+  if(y1>0 && path[x1][y1]== 0 && maze[x1][y1-1] == 1){
+  ^
+../src/codeVita.c:90:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:91:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:91:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:93:2: error: invalid use of array with unspecified bounds
+  if(x1>0 && path[x1][y1]== 0 && maze[x1-1][y1] == 1){
+  ^
+../src/codeVita.c:95:3: error: invalid use of array with unspecified bounds
+   path[x1][y1] = 1;
+   ^
+../src/codeVita.c:96:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[]’ but argument is of type ‘int’
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:96:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (*path)[], int n, int x1, int y1, int x2, int y2){
+     ^
+make: *** [src/codeVita.o] Error 1
+16:12:03 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c: In function ‘check’:
+../src/codeVita.c:52:4: warning: missing braces around initializer [-Wmissing-braces]
+    int path[MAX][MAX] = {0};
+    ^
+../src/codeVita.c:52:4: warning: (near initialization for ‘path[0]’) [-Wmissing-braces]
+../src/codeVita.c: In function ‘isReachable’:
+../src/codeVita.c:81:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[350]’ but argument is of type ‘int’
+ int isReachable(int (path)[MAX][MAX], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:81:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (path)[MAX][MAX], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:86:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[350]’ but argument is of type ‘int’
+ int isReachable(int (path)[MAX][MAX], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:86:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+src/subdir.mk:18: recipe for target 'src/codeVita.o' failed
+ int isReachable(int (path)[MAX][MAX], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:91:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[350]’ but argument is of type ‘int’
+ int isReachable(int (path)[MAX][MAX], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:91:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (path)[MAX][MAX], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:96:23: warning: passing argument 1 of ‘isReachable’ makes pointer from integer without a cast
+   return isReachable( n, x1, y1, x2, y2);
+                       ^
+../src/codeVita.c:74:5: note: expected ‘int (*)[350]’ but argument is of type ‘int’
+ int isReachable(int (path)[MAX][MAX], int n, int x1, int y1, int x2, int y2){
+     ^
+../src/codeVita.c:96:10: error: too few arguments to function ‘isReachable’
+   return isReachable( n, x1, y1, x2, y2);
+          ^
+../src/codeVita.c:74:5: note: declared here
+ int isReachable(int (path)[MAX][MAX], int n, int x1, int y1, int x2, int y2){
+     ^
+make: *** [src/codeVita.o] Error 1
+16:12:33 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+../src/codeVita.c: In function ‘check’:
+../src/codeVita.c:52:4: warning: missing braces around initializer [-Wmissing-braces]
+    int path[MAX][MAX] = {0};
+    ^
+../src/codeVita.c:52:4: warning: (near initialization for ‘path[0]’) [-Wmissing-braces]
+Finished building: ../src/codeVita.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o   
+Finished building target: codeVita
+ 
+16:12:53 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+16:16:45 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+Finished building: ../src/codeVita.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o   
+Finished building target: codeVita
+ 
+16:18:37 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+Finished building: ../src/codeVita.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o   
+Finished building target: codeVita
+ 
+16:19:22 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+16:22:32 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+17:40:12 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/milkman.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/milkman.d" -MT"src/milkman.d" -o "src/milkman.o" "../src/milkman.c"
+../src/milkman.c: In function ‘main’:
+../src/milkman.c:14:12: error: invalid operands to binary & (have ‘char *’ and ‘int’)
+  scanf("%d"&t);
+            ^
+../src/milkman.c:20:2: warning: implicit declaration of function ‘check’ [-Wimplicit-function-declaration]
+  check(d[i]);
+  ^
+../src/milkman.c:12:19: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,n,d[MAX],t,j;
+                   ^
+../src/milkman.c:12:8: warning: unused variable ‘n’ [-Wunused-variable]
+  int i,n,d[MAX],t,j;
+        ^
+../src/milkman.c: At top level:
+../src/milkman.c:24:6: warning: conflicting types for ‘check’
+ void check(int d){
+      ^
+../src/milkman.c:20:2: note: previous implicit declaration of ‘check’ was here
+  check(d[i]);
+src/subdir.mk:21: recipe for target 'src/milkman.o' failed
+  ^
+../src/milkman.c: In function ‘check’:
+../src/milkman.c:25:9: warning: unused variable ‘q’ [-Wunused-variable]
+  int r ,q, counter =0;
+         ^
+../src/milkman.c:25:6: warning: unused variable ‘r’ [-Wunused-variable]
+  int r ,q, counter =0;
+      ^
+make: *** [src/milkman.o] Error 1
+17:40:27 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/milkman.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/milkman.d" -MT"src/milkman.d" -o "src/milkman.o" "../src/milkman.c"
+../src/milkman.c: In function ‘main’:
+../src/milkman.c:20:2: warning: implicit declaration of function ‘check’ [-Wimplicit-function-declaration]
+  check(d[i]);
+  ^
+../src/milkman.c:12:19: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,n,d[MAX],t,j;
+                   ^
+../src/milkman.c:12:8: warning: unused variable ‘n’ [-Wunused-variable]
+  int i,n,d[MAX],t,j;
+        ^
+../src/milkman.c: At top level:
+../src/milkman.c:24:6: warning: conflicting types for ‘check’
+ void check(int d){
+      ^
+../src/milkman.c:20:2: note: previous implicit declaration of ‘check’ was here
+  check(d[i]);
+  ^
+../src/milkman.c: In function ‘check’:
+../src/milkman.c:25:9: warning: unused variable ‘q’ [-Wunused-variable]
+  int r ,q, counter =0;
+         ^
+../src/milkman.c:25:6: warning: unused variable ‘r’ [-Wunused-variable]
+  int r ,q, counter =0;
+      ^
+Finished building: ../src/milkman.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o ./src/milkman.o   
+./src/milkman.o: In function `main':
+/home/abhishek/git/prac/c/codeVita/Debug/../src/milkman.c:11: multiple definition of `main'
+./src/codeVita.o:/home/abhishek/git/prac/c/codeVita/Debug/../src/codeVita.c:18: first defined here
+makefile:30: recipe for target 'codeVita' failed
+./src/milkman.o: In function `check':
+/home/abhishek/git/prac/c/codeVita/Debug/../src/milkman.c:24: multiple definition of `check'
+./src/codeVita.o:/home/abhishek/git/prac/c/codeVita/Debug/../src/codeVita.c:45: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [codeVita] Error 1
+17:41:09 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/milkman.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/milkman.d" -MT"src/milkman.d" -o "src/milkman.o" "../src/milkman.c"
+../src/milkman.c: In function ‘main’:
+../src/milkman.c:21:2: warning: implicit declaration of function ‘ch’ [-Wimplicit-function-declaration]
+  ch(d[i]);
+  ^
+../src/milkman.c:13:19: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,n,d[MAX],t,j;
+                   ^
+../src/milkman.c:13:8: warning: unused variable ‘n’ [-Wunused-variable]
+  int i,n,d[MAX],t,j;
+        ^
+../src/milkman.c: At top level:
+../src/milkman.c:25:6: warning: conflicting types for ‘ch’
+ void ch(int d){
+      ^
+../src/milkman.c:21:2: note: previous implicit declaration of ‘ch’ was here
+  ch(d[i]);
+  ^
+Finished building: ../src/milkman.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o ./src/milkman.o   
+./src/milkman.o: In function `main':
+/home/abhishek/git/prac/c/codeVita/Debug/../src/milkman.c:12: multiple definition of `main'
+./src/codeVita.o:/home/abhishek/git/prac/c/codeVita/Debug/../src/codeVita.c:18: first defined here
+collect2: error: ld returned 1 exit status
+makefile:30: recipe for target 'codeVita' failed
+make: *** [codeVita] Error 1
+17:41:28 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/codeVita.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/codeVita.d" -MT"src/codeVita.d" -o "src/codeVita.o" "../src/codeVita.c"
+Finished building: ../src/codeVita.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/codeVita.o ./src/milkman.o   
+Finished building target: codeVita
+ 
+11:44:27 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+../src/Compound.c: In function ‘main’:
+../src/Compound.c:12:2: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘double *’ [-Wformat=]
+  scanf("%f",&p);
+  ^
+../src/Compound.c:13:2: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘double *’ [-Wformat=]
+  scanf("%f",&r);
+  ^
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+11:45:06 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+../src/Compound.c: In function ‘main’:
+../src/Compound.c:12:2: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘double *’ [-Wformat=]
+  scanf("%f",&p);
+  ^
+../src/Compound.c:13:2: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘double *’ [-Wformat=]
+  scanf("%f",&r);
+  ^
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+11:46:47 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+../src/Compound.c: In function ‘main’:
+../src/Compound.c:12:2: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘double *’ [-Wformat=]
+  scanf("%f",&p);
+  ^
+../src/Compound.c:13:2: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘double *’ [-Wformat=]
+  scanf("%f",&r);
+  ^
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+11:47:36 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+../src/Compound.c: In function ‘main’:
+../src/Compound.c:12:2: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘double *’ [-Wformat=]
+  scanf("%f",&p);
+  ^
+../src/Compound.c:13:2: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘double *’ [-Wformat=]
+  scanf("%f",&r);
+  ^
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+11:48:27 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+../src/Compound.c: In function ‘main’:
+../src/Compound.c:12:2: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘double *’ [-Wformat=]
+  scanf("%f",&p);
+  ^
+../src/Compound.c:13:2: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘double *’ [-Wformat=]
+  scanf("%f",&r);
+  ^
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+11:48:58 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+11:49:56 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+11:51:47 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+11:54:47 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+11:57:45 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+11:58:45 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+12:00:09 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+12:02:04 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+12:04:47 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+12:05:50 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+12:06:19 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+12:07:38 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+12:10:09 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+12:10:38 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+12:19:33 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+../src/Compound.c: In function ‘main’:
+../src/Compound.c:36:8: error: conflicting types for ‘c’
+src/subdir.mk:18: recipe for target 'src/Compound.o' failed
+  float c = x-p;
+        ^
+../src/Compound.c:14:7: note: previous declaration of ‘c’ was here
+  char c;
+       ^
+make: *** [src/Compound.o] Error 1
+12:19:49 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+../src/Compound.c: In function ‘main’:
+../src/Compound.c:36:8: error: conflicting types for ‘c’
+  float c = x-p;
+        ^
+src/subdir.mk:18: recipe for target 'src/Compound.o' failed
+../src/Compound.c:14:7: note: previous declaration of ‘c’ was here
+  char c;
+       ^
+make: *** [src/Compound.o] Error 1
+12:20:16 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+../src/Compound.c: In function ‘main’:
+../src/Compound.c:14:7: warning: unused variable ‘c’ [-Wunused-variable]
+  char c;
+       ^
+../src/Compound.c:29:12: warning: ‘r’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   te = (((p*r)/(100.0*12.0)));
+            ^
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+12:22:29 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+../src/Compound.c: In function ‘main’:
+../src/Compound.c:38:8: error: conflicting types for ‘c’
+  float c = x-p;
+        ^
+../src/Compound.c:14:7: note: previous declaration of ‘c’ was here
+  char c;
+       ^
+src/subdir.mk:18: recipe for target 'src/Compound.o' failed
+make: *** [src/Compound.o] Error 1
+12:22:47 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+12:23:13 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+12:23:27 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+12:23:39 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o   
+Finished building target: codeVita
+ 
+12:26:54 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+12:29:20 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compound.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compound.d" -MT"src/Compound.d" -o "src/Compound.o" "../src/Compound.c"
+Finished building: ../src/Compound.c
+ 
+Building file: ../src/vbc.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vbc.d" -MT"src/vbc.d" -o "src/vbc.o" "../src/vbc.c"
+Finished building: ../src/vbc.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compound.o ./src/vbc.o   
+./src/vbc.o: In function `main':
+/home/abhishek/git/prac/c/codeVita/Debug/../src/vbc.c:9: multiple definition of `main'
+makefile:30: recipe for target 'codeVita' failed
+./src/Compound.o:/home/abhishek/git/prac/c/codeVita/Debug/../src/Compound.c:11: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [codeVita] Error 1
+13:12:06 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/file.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/file.d" -MT"src/file.d" -o "src/file.o" "../src/file.c"
+Finished building: ../src/file.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/file.o   
+Finished building target: codeVita
+ 
+13:12:16 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+make: Nothing to be done for 'all'.
+13:12:30 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/Compoundddf.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Compoundddf.d" -MT"src/Compoundddf.d" -o "src/Compoundddf.o" "../src/Compoundddf.c"
+Finished building: ../src/Compoundddf.c
+ 
+Building file: ../src/file.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/file.d" -MT"src/file.d" -o "src/file.o" "../src/file.c"
+Finished building: ../src/file.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/Compoundddf.o ./src/file.o   
+./src/file.o: In function `main':
+/home/abhishek/git/prac/c/codeVita/Debug/../src/file.c:42: multiple definition of `main'
+./src/Compoundddf.o:/home/abhishek/git/prac/c/codeVita/Debug/../src/Compoundddf.c:11: first defined here
+makefile:30: recipe for target 'codeVita' failed
+collect2: error: ld returned 1 exit status
+make: *** [codeVita] Error 1
+13:13:15 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/file.o   
+Finished building target: codeVita
+ 
+13:29:14 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/file.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/file.d" -MT"src/file.d" -o "src/file.o" "../src/file.c"
+Finished building: ../src/file.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/file.o   
+Finished building target: codeVita
+ 
+13:29:38 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/file.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/file.d" -MT"src/file.d" -o "src/file.o" "../src/file.c"
+Finished building: ../src/file.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/file.o   
+Finished building target: codeVita
+ 
+13:30:01 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/file.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/file.d" -MT"src/file.d" -o "src/file.o" "../src/file.c"
+Finished building: ../src/file.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/file.o   
+Finished building target: codeVita
+ 
+13:30:13 **** Incremental Build of configuration Debug for project codeVita ****
+make all 
+Building file: ../src/file.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/file.d" -MT"src/file.d" -o "src/file.o" "../src/file.c"
+../src/file.c: In function ‘main’:
+../src/file.c:45:15: warning: variable ‘b’ set but not used [-Wunused-but-set-variable]
+  char c,a[30],b[30];
+               ^
+../src/file.c:45:9: warning: variable ‘a’ set but not used [-Wunused-but-set-variable]
+  char c,a[30],b[30];
+         ^
+Finished building: ../src/file.c
+ 
+Building target: codeVita
+Invoking: GCC C Linker
+gcc  -o "codeVita"  ./src/file.o   
+Finished building target: codeVita
+ 

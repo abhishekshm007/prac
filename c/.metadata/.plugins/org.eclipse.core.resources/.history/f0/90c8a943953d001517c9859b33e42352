@@ -1,0 +1,24 @@
+/*
+ * Compound.c
+ *
+ *  Created on: 08-Aug-2015
+ *      Author: abhishek
+ */
+#include<stdio.h>
+
+int main(){
+	int t;
+	double p,r;
+	scanf("%f",&p);
+	scanf("%f",&r);
+	scanf("%d",&t);
+	double te;
+	while(t){
+		te = (((p*r)/(100.0*12.0)));
+		p = p+te;
+		t--;
+	}
+	printf("%f",p);
+	return 0;
+}
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;eclipse_c/heapifyf.c&apos; to &apos;heapify.c&apos;" description="Rename resource &apos;heapifyf.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="heapifyf.c" name="heapify.c" stamp="1440217679929" updateReferences="true"/>
+</session>

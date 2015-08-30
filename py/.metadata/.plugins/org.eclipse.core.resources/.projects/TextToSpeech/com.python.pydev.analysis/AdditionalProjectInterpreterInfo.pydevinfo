@@ -1,0 +1,22 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/abhishek/git/prac/py/.metadata/.plugins/org.eclipse.core.resources/.projects/TextToSpeech/com.python.pydev.analysis/v2_indexcache
+pyttsxEx|1438428548000000000|/home/abhishek/git/prac/py/TextToSpeech/src/pyttsxEx.py
+tts1|1438425608000000000|/home/abhishek/git/prac/py/TextToSpeech/src/tts1.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+1=pyttsxEx
+2=tts1
+-- END DICTIONARY
+-- START TREE 1
+5
+eng|1|engine!11@
+f|1|f!19@
+rat|1|rate!11@
+tts|1|tts!19@
+voi|1|voices!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

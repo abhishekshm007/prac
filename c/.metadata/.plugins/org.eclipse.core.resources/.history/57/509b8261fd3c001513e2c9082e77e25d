@@ -1,0 +1,44 @@
+/*
+ * milkman.c
+ *
+ *  Created on: 07-Aug-2015
+ *      Author: abhishek
+ */
+
+#include<stdio.h>
+#define MAX 1000
+int l[] = {1,5,7,10};
+int main(){
+	int i,n,d[MAX],t,j;
+
+	scanf("%d",&t);
+	for(i=0; i<t; i++){
+			scanf("%d",&d[i]);
+
+	}
+	for(i=0; i<t; i++)
+	check(d[i]);
+	return 1;
+}
+
+void check(int d){
+	int r ,q, counter =0;
+	while(d >= 10){
+		counter++;
+		d = d-10;
+	}
+	while(d >= 7){
+		counter ++;
+		d = d-7;
+	}
+	while(d >= 5){
+			counter ++;
+			d = d-5;
+		}
+	while(d >= 1){
+			counter ++;
+			d = d-1;
+		}
+	printf("%d\n",counter);
+
+}

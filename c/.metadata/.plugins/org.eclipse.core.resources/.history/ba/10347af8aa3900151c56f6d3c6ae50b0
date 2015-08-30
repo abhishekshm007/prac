@@ -1,0 +1,21 @@
+/*
+ ============================================================================
+ Name        : codeVita.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX 350
+
+int main(void) {
+	int maze[MAX][MAX], i, j, n, path[MAX][MAX];
+
+	scanf("%d",&n);
+	return EXIT_SUCCESS;
+}

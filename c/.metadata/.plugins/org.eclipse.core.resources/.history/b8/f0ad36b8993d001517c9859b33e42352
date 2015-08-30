@@ -1,0 +1,44 @@
+/*
+ * Compound.c
+ *
+ *  Created on: 08-Aug-2015
+ *      Author: abhishek
+ */
+#include<stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+	int t;
+	double p=0.0,r;
+	char c;
+//	scanf("%lf",&p);
+//	scanf("%lf",&r);
+//	scanf("%d",&t);
+
+	double number;
+	do {
+	    printf("Enter a double: ");
+	    scanf("%*c"); // burn stdin so as not to buffer up responses
+	} while (1 != scanf("%lf", &number));
+	printf("%f",number);
+	//return 0;
+	double f=p;
+	double te;
+	while(t){
+		te = (((p*r)/(100.0*12.0)));
+		printf("%lf\n",te);
+		p = p+te+f;
+		t--;
+	}
+	double x = p-f;
+	int y = p-f;
+	float c = x-p;
+	printf("%.0f",x);
+	if(c>=.5){
+		y++;
+	}
+//	printf("%i",y);
+	return 0;
+}
+
